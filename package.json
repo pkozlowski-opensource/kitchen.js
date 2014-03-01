@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "di": "^2.0.0-pre-2",
-    "kettle.js": "0.0.1",
+    "kettle.js": "0.0.2",
     "stowe.js": "0.0.1"
   }
 }
