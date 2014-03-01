@@ -1,6 +1,6 @@
 {
   "name": "kitchen.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/pkozlowski-opensource/kitchen.js.git"
@@ -8,6 +8,6 @@
   "dependencies": {
     "di": "^2.0.0-pre-2",
     "kettle.js": "0.0.2",
-    "stowe.js": "0.0.1"
+    "stowe.js": "0.0.2"
   }
 }
