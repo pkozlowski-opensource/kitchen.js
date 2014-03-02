@@ -19,6 +19,7 @@ gulp.task('default', function () {
 
   //copy public files
   gulp.src('public/*').pipe(gulp.dest('dist'));
+  gulp.src('node_modules/es6-shim/es6-shim.js').pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function () {
