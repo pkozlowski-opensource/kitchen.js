@@ -10,8 +10,6 @@ var traceurOptions = {
 gulp.task('default', function () {
 
   //traceur compilation
-  gulp.src('node_modules/di/src/*.js')
-    .pipe(traceur(traceurOptions)).pipe(gulp.dest('dist/di'));
   gulp.src('node_modules/*.js/*.js')
     .pipe(traceur(traceurOptions)).pipe(gulp.dest('dist'));
   gulp.src(['index.js', 'kitchen.js'])
@@ -20,6 +18,7 @@ gulp.task('default', function () {
   //copy public files
   gulp.src('public/*').pipe(gulp.dest('dist'));
   gulp.src('node_modules/es6-shim/es6-shim.js').pipe(gulp.dest('dist'));
+  gulp.src('node_modules/di/dist/amd/*').pipe(gulp.dest('dist/di'));
 });
 
 gulp.task('watch', function () {
