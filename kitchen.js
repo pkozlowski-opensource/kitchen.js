@@ -1,7 +1,5 @@
-//this one is actually interesting when it comes to paths as I would like to cut off the /src folder
-//I guess this is more to how DI is publishing to npm
-import {Kettle} from 'kettle/kettle';
-import {Stowe} from 'stowe/stowe';
+import {Kettle} from 'kettle.js/kettle';
+import {Stowe} from 'stowe.js/stowe';
 
 export class Kitchen {
 
@@ -10,8 +8,10 @@ export class Kitchen {
     this.stowe = stowe;
   }
 
-  function prepareBreakfast() {
-    kettle.on();
-    stowe.on();
+  prepareBreakfast() {
+    this.kettle.on();
+    this.stowe.on();
+    this.kettle.off();
+    this.stowe.off();
   }
 }
